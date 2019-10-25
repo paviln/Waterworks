@@ -1,7 +1,8 @@
 /**
- * Project: Waterworks administration
- * Authors: Jens Christensen, Kasper S. Dinsen and Omid Rezaei
- * Date: 2019-10-25
+ * Waterworks administration project
+ *
+ * @author Jens Christensen, Kasper S. Dinsen and Omid Rezaei
+ * @version 1.0 Build 2019-10-25
  */
 
 import java.time.LocalDate;
@@ -484,7 +485,7 @@ public class Waterworks
                 System.out.print(data);
             }
         } while(true);
-        
+
         return  segmentNumber;
     }
 
