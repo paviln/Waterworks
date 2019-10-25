@@ -304,19 +304,19 @@ public class Waterworks
         int menuChoice = numberBetween(1, menu.length - 1) - 1;
 
         switch (menuChoice) {
-            case 1:
+            case 0:
                 createProperty();
                 break;
-            case 2:
+            case 1:
                 updateProperty();
                 break;
-            case 3:
+            case 2:
                 deleteProperty();
                 break;
-            case 4:
+            case 3:
                 showProperty();
                 break;
-            case 5:
+            case 4:
                 createMeter();
                 break;
         }
@@ -446,13 +446,13 @@ public class Waterworks
         int menuChoice = numberBetween(1, menu.length - 1) - 1;
 
         switch (menuChoice) {
-            case 1:
+            case 0:
                 createSegment();
                 break;
-            case 2:
+            case 1:
                 updateSegment();
                 break;
-            case 3:
+            case 2:
                 deleteSegment();
                 break;
         }
