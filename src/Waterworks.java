@@ -29,7 +29,7 @@ public class Waterworks
             printStringArray(menu);
 
             // Get int input between the numbers of menu options
-            int menuChoice =  numberBetween(0, menu.length) - 1;
+            int menuChoice =  numberBetween(1, menu.length - 1) - 1;
 
             // Call menu option function
             switch (menuChoice)
@@ -137,23 +137,23 @@ public class Waterworks
 
         printStringArray(menu);
 
-        int menuChoice =  numberBetween(0, menu.length) - 1;
+        int menuChoice =  numberBetween(1, menu.length - 1) - 1;
 
         switch (menuChoice)
         {
             case 0:
                 createCustomer();
                 break;
-            case 2:
+            case 1:
                 updateCustomerInfo();
                 break;
-            case 3:
+            case 2:
                 deleteCustomer();
                 break;
-            case 4:
+            case 3:
                 showCustomer();
                 break;
-            case 5:
+            case 4:
                 break;
         }
     }
@@ -172,7 +172,6 @@ public class Waterworks
         birthday = stringInputText("Please write customer birthday as follows year-month-day");
 
         DB.insertSQL("INSERT INTO tblCustomer (fldName, fldPhone, fldCPRNo, fldBirthday) VALUES('"+name+"','" + phone +"', '" + cprNo + "', '"+ birthday + "')");
-
     }
 
     /**
@@ -302,7 +301,7 @@ public class Waterworks
 
         printStringArray(menu);
 
-        int menuChoice = intInput();
+        int menuChoice = numberBetween(1, menu.length - 1) - 1;
 
         switch (menuChoice) {
             case 1:
@@ -444,7 +443,7 @@ public class Waterworks
 
         printStringArray(menu);
 
-        int menuChoice = intInput();
+        int menuChoice = numberBetween(1, menu.length - 1) - 1;
 
         switch (menuChoice) {
             case 1:
